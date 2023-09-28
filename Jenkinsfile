@@ -18,6 +18,12 @@ agent any
     // Archive the build output artifacts.
      archiveArtifacts artifacts: 'output/*.txt', excludes: 'output/*.md'
      }
-   }
+   
+}
+stage('Interactive input'){
+steps{
+input 'Hi Pavithra'
+}
+}
   }
 }
