@@ -25,10 +25,5 @@ echo "Choice: ${params.CHOICE}"
 echo "Password: ${params.PASSWORD}"
 }
 }
-stage('Example1') {
-steps {
-echo "Hello ${params.PERSON1}"
-}
-}
 }
 }
