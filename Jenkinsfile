@@ -16,9 +16,9 @@ stages {
   // For example, you can use the 'archiveArtifacts' step to archive built artifacts
 script{
   archiveArtifacts 'target/*.jar'
-emailext body: '''Hi Pavitra,
+emailext body: 'Hi Pavitra,
 
-This is a test notification from jenkins''', subject: 'Jenkins Test Notification', to: 'pavitra17.kommineni@gmail.com
+This is a test notification from jenkins', subject: 'Jenkins Test Notification', to: 'pavitra17.kommineni@gmail.com'
 }
      }
   } 
