@@ -14,10 +14,12 @@ stages {
   steps {
   // Add steps to publish artifacts or deploy the application
   // For example, you can use the 'archiveArtifacts' step to archive built artifacts
+script{
   archiveArtifacts 'target/*.jar'
 emailext body: '''Hi Pavitra,
 
 This is a test notification from jenkins''', subject: 'Jenkins Test Notification', to: 'pavitra17.kommineni@gmail.com
+}
      }
   } 
 }
